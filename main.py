@@ -46,7 +46,7 @@ class Screen(object):
 
         self.items = items
 
-        self.max_lines = curses.LINES
+        self.max_lines = curses.LINES - 2
         self.top = 0
         self.bottom = len(self.items)
         self.current = 0
@@ -68,6 +68,8 @@ class Screen(object):
         self.current = curses.color_pair(3)
 
         self.height, self.width = self.window.getmaxyx()
+        # self.height -= 2
+
 
     def run(self):
         """Continue running the TUI until get interrupted"""

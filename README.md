@@ -1,6 +1,12 @@
 # py-curses-ssh
 
-### configuration
+### Install
+
+```
+$ pip install -r requirements.txt
+```
+
+### Configuration
 ```
 $ vim ssh.cfg
 ```
